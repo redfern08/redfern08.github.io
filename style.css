@@ -1,0 +1,387 @@
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    color: white;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.5em;
+    background-color: #000000;
+    background-image: linear-gradient(45deg, #000000 14%, #a02426 69%, #ecd35a 100%);
+}
+
+
+
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+
+figcaption {
+    margin-left: 5em;
+    margin-right: 5em;
+    position: relative;
+    right: 5em;
+}
+
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Oswald', sans-serif;
+    animation-duration: 3s;
+    animation-name: fadein;
+}
+
+
+header h2 {
+    margin-block: 50px;
+}
+
+.intro-card {
+    text-align: center;
+}
+
+.intro-card img {
+    width: 35%;
+    border-radius: 500px;
+}
+
+
+h1 {
+    transition: font-size .5s ease;
+}
+
+h1:hover {
+    font-size: 2.5em;
+    
+}
+
+footer {
+    font-size: 1.2em;
+    text-align: right;
+    padding: 2.5em;
+    gap: 1em;
+    animation-duration: 4s;
+    animation-name: fadein, slidein-one;
+}
+
+footer a {
+    font-size: 2em;
+    color: white;
+    transition: color .5s;
+    transition: font-size .2s ease;
+    animation-duration: 4s;
+    animation-name: fadein, slidein-one;
+}
+
+footer a:hover {
+    color: rgb(219, 27, 27);
+}
+
+footer a:hover {
+    color: rgb(114, 44, 44);
+    font-size: 3em;
+    cursor: none;
+}
+
+/*Custom class layouts*/
+
+.about-me {
+    padding-inline: 3em;
+    padding-block: 12px;
+    border-radius: 25px;
+    text-align: center;
+    animation-duration: 4s;
+    animation-name: fadein, slidein-one;
+}
+
+
+.container {
+    position: relative;
+    text-align: center;
+    animation-duration: 3s;
+    animation-name: fadein;
+}
+
+.container img {
+    width: 20%;
+    border: 4px red solid;
+    border-radius: 5px;
+    transition: width 1s;
+}
+
+.container img:hover {
+    width: 21%;
+}
+
+.text-center {
+    background-color: rgba(0, 0, 0, .40);
+    padding: .2em;
+    border-radius: 5px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+} 
+
+
+
+.bg-box-1 {
+    background-color: #550b0b90;
+    width: 100%;
+    box-shadow: 0px 0px 7px 3px rgba(255, 0, 0, .25);
+}
+
+
+.page-links {
+    border-radius: 7px;
+    padding-inline: 20%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10em;
+    text-align: right;
+    animation-duration: 2s;
+    animation-name: slidein-one;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+}
+.hobbies {
+    text-align: left;
+    padding-left: 3em;
+    padding-right: 10em;
+    animation-duration: 2s;
+    animation-name: slidein-two;
+}
+
+
+.life-adventures {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 3em;
+    padding-left: 3em;
+    padding-right: 3em;
+    margin-top: 2em;
+    text-align: left;
+    animation-duration: 3s;
+    animation-name: fadein;
+}
+
+.container {
+    margin: 10em;
+    text-align: center;
+    animation-duration: 3s;
+    animation-name: fadein;
+}
+
+.page-links {
+    display: flex;
+    flex-direction: row;
+    gap: 3em;
+}
+
+
+header a {
+    font-family: 'Titillium Web', sans-serif;
+    color: white;
+    transition: color .5s;
+    transition: font-size .2s ease;
+    text-decoration: none;
+}
+
+header a:hover {
+    color: red;
+    text-decoration: none;
+    font-size: 1.1em;
+    cursor: none;
+}
+
+ul li {
+    text-align: left;
+    list-style: none;
+    line-height: 1.6em;
+}
+
+ul h2 {
+    text-align: left;
+}
+
+
+
+
+/*Animations*/
+
+@keyframes slidein-one {
+    from {transform: translateX(-60%);}
+    to {transform: translateX(0%);}
+}
+@keyframes slidein-two {
+    from {transform: translateX(60%);}
+    to {transform: translateX(0%);}
+}
+@keyframes fadein {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+
+/* Media screen size */
+/* Screen size reference: min/max-600px, min-768px, min-992px, min-1200px */
+
+@media screen and (max-width: 600px) {
+    body {
+        font-size: 16px;
+    }
+
+    header h2 {
+        margin-block: 10px;
+        text-align: center;
+    }
+
+    header .page-links {
+        margin-block: 10px;
+        gap: 10px;
+    }
+
+
+    .about-me {
+        font-size: 12px;
+        margin: auto;
+    }
+    
+    .card {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 15px;
+        margin-block: 2em;
+        text-align: center;
+    }
+
+    .card h2 {
+        text-align: center;
+    }
+
+
+    .container {
+        font-size: 15px;
+        margin: 0 auto;
+    }
+
+    .container img {
+        width: 40%;
+    }
+
+    footer {
+        font-size: 18px;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .page-links {
+        margin-block: 20px;
+        gap: 5em;
+    }
+
+    .about-me {
+        margin-bottom: 55px;
+    }
+
+    .card {
+        margin-top: 25px;
+    }
+
+    .container {
+        margin: 0 auto;
+    }
+
+    .container img {
+        width: 40%;
+    }
+
+}
+
+@media screen and (min-width: 768px) {
+    .about-me {
+        margin-bottom: 3em;
+    }
+
+    .card {
+        margin-top: 3em;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container p {
+        font-size: 15px;
+    }
+
+    .container img {
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .about-me {
+        margin-bottom: 4em;
+    }
+
+    .page-links {
+        gap: 7em;
+    }
+
+    .card {
+        margin-top: 4em;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 3em;
+    }
+
+    .container {
+        margin: 0 auto;
+    }
+
+    .container p {
+        font-size: inherit;
+    }
+
+    .container img {
+        width: 30%;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .about-me {
+        margin-inline: 5%;
+    }
+
+    .card {
+        margin-inline: 3%;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 6em;
+    }
+}
