@@ -1,3 +1,4 @@
+/* Base attribute customization */
 * {
     margin: 0;
     padding: 0;
@@ -5,6 +6,10 @@
 
 body {
     background-color: black;
+    background-image: url('photos/crater_lake.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
     color: white;
     word-wrap: break-word;
 }
@@ -25,7 +30,6 @@ body {
     animation: 1s fadein, .5s slidein;
 }
 
-/* Base attribute customization */
 
 
 
@@ -65,10 +69,13 @@ footer {
     font-size: 40px;
     text-align: center;
     margin-block: 4em;
+    padding: 50px;
 }
 
 #about img {
-    border-radius: 50%;
+    border-radius: 10px;
+    max-width: 400px; 
+    max-height: 400px;
 }
 
 .nav {
@@ -101,7 +108,7 @@ footer {
 }
 
 #projects .card {
-    background-color: black;
+    background-color: rgb(43, 100, 225);
     color: white;
     border: 1px solid rgb(34, 33, 33);
     font-size: 25px;
@@ -203,6 +210,10 @@ footer {
 @media (max-width: 767px) {
     #future-dev h1, #about h2, #projects-title {
         font-size: 20px;
+    }
+    #about img {
+        max-width: 200px;
+        max-height: 200px;
     }
     #future-dev, #about {
         font-size: 20px;
