@@ -12,6 +12,7 @@ body {
     background-size: cover;
     color: white;
     word-wrap: break-word;
+    font-family: 'Montserrat', sans-serif;
 }
 
 /* Keyframe animations */
@@ -34,7 +35,6 @@ body {
 
 
 footer {
-    font-family: 'Jura', sans-serif;
     margin-top: 4em;
     font-size: 25px;
 }
@@ -50,7 +50,6 @@ footer {
 }
 
 #future-dev {
-    font-family: 'Montserrat', sans-serif;
     font-size: 40px;
     text-align: center;
     margin-block: 4em;
@@ -65,7 +64,6 @@ footer {
 
 #about {
     border-radius: 3px;
-    font-family: 'Montserrat', sans-serif;
     font-size: 40px;
     text-align: center;
     margin-block: 4em;
@@ -91,6 +89,11 @@ footer {
     color: white;
 }
 
+#game-projects {
+    font-size: xx-large;
+    text-align: center;
+}
+
 #projects-title {
     font-family: 'Orbitron', sans-serif;
     letter-spacing: .5em;
@@ -100,7 +103,6 @@ footer {
 }
 
 #projects {
-    font-family: 'Montserrat', sans-serif;
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
@@ -133,7 +135,6 @@ footer {
 }
 
 #tech {
-    font-family: 'Montserrat', sans-serif;
     margin-block: 5em;
 }
 
@@ -224,6 +225,10 @@ footer {
     }
     #projects .card .card-title {
         font-size: 20px;
+    }
+    #game-projects {
+        font-size: medium;
+        text-align: center;
     }
 
     #stack i {
