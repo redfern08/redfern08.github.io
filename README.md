@@ -1,3 +1,5 @@
 # Portfolio
-Here is my personal portfolio.  You can view it and many of
-the projects I have completed.
+Minimalist.  Focus is geared
+toward data and simulation engineering.
+
+Making the world a better place.
