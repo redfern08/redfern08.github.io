@@ -119,11 +119,13 @@ nav a:hover {
   margin: 1rem 0;
   font-size: clamp(3.5rem, 9vw, 8rem);
   line-height: 1.10;
-  letter-spacing: -0.06em;
+  letter-spacing: -0.09em;
 }
 
 .hero h1 span {
   color: var(--red);
+  font-size: 90px;
+  letter-spacing: -0.05em;
 }
 
 .intro {
@@ -166,7 +168,7 @@ nav a:hover {
   margin: 0 0 1.5rem;
   font-size: clamp(2.5rem, 6vw, 5rem);
   line-height: 1;
-  letter-spacing: -0.05em;
+  letter-spacing: -0.08em;
 }
 
 .section-content > p {
