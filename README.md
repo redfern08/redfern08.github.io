@@ -1,5 +1,5 @@
 # Portfolio
-Minimalist.  Focus is geared
-toward data and simulation engineering.
+Follow my progress!  Let's connect and network.
 
-Making the world a better place.
+"May the force be with you"
+<img src="jedi-solid-full.svg" stye="width: 50px;">
